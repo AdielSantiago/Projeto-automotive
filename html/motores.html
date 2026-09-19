@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprofundamento na engenharia de motores automotivos: arquiteturas V8, V12, Boxer e EcoBoost. Conceitos de aspiração, sobrealimentação e termodinâmica.">
+    <meta name="keywords" content="Engenharia de Motores, Motor Boxer, Motor V8, Motor V12, EcoBoost, Ciclo Otto, Sobrealimentação, Turbocompressor">
+    <meta name="robots" content="index, follow">
+    <title>Cultura & Engenharia Automotiva - Engenharia de Motores</title>
+
+    <link rel="icon" type="image/webp" href="../img/logo-motores-256.webp">
+</head>
+<body>
+
+    <header>
+        <h1>Cultura & Engenharia Automotiva</h1>
+        <nav>
+            <a href="index.html">Home</a> |  
+            <a href="anos70-80.html">Anos 70 e 80</a> | 
+            <a href="anos90-2000.html">Anos 90 e 2000</a> | 
+            <a href="games.html">Jogos</a> | 
+            <a href="feedback.html">Feedback</a>
+            
+            <br><br>
+
+            <p><strong>Marcas Ícones:</strong></p>
+            <ul>
+                <li><a href="ferrari.html">Ferrari</a></li>
+                <li><a href="lamborghini.html">Lamborghini</a></li>
+                <li><a href="porsche.html">Porsche</a></li>
+                <li><a href="ford.html">Ford</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h2>Fundamentos e Arquiteturas da Engenharia de Motores</h2>
+                <p><strong>Foco Técnico:</strong> Termodinâmica, ciclos de combustão e a mecânica das grandes arquiteturas automotivas.</p>
+            </header>
+
+            <!-- SEÇÃO 1: PRINCÍPIOS FUNDAMENTAIS -->
+            <section>
+                <h3>1. Princípios Termodinâmicos e de Combustão</h3>
+                <p>
+                    A maioria dos motores de combustão interna (<abbr title="Motor de Combustão Interna">MCI</abbr>) opera sob o consagrado 
+                    <em>Ciclo Otto</em> de quatro tempos. A eficiência teórica depende diretamente da taxa de compressão mecânica e da mistura ar-combustível.
+                </p>
+
+                <p>
+                    Durante a queima do combustível com o oxigênio, a reação libera energia e subprodutos gasosos como <mark>CO<sub>2</sub></mark> (Dióxido de Carbono) e <mark>H<sub>2</sub>O</mark> (Água em vapor).
+                </p>
+
+                <h4>As 4 Etapas do Ciclo Otto (Motores a 4 Tempos)</h4>
+                
+                <!-- TABELA EXPLICATIVA DAS 4 ETAPAS -->
+                <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                    <thead>
+                        <tr bgcolor="#d0d0d0">
+                            <th align="center">Etapa / Tempo</th>
+                            <th align="left">Posição das Válvulas</th>
+                            <th align="left">Movimento do Pistão</th>
+                            <th align="left">Descrição do Processo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Admissão</strong></td>
+                            <td>Admissão <mark>Aberta</mark><br>Escape Fechada</td>
+                            <td>Descendente (Ponto Morto Superior &rarr; Inferior)</td>
+                            <td>O pistão desce criando vácuo na câmara, aspirando a mistura de ar e combustível (ou apenas ar nos motores com injeção direta).</td>
+                        </tr>
+                        <tr bgcolor="#f9f9f9">
+                            <td><strong>2. Compressão</strong></td>
+                            <td>Ambas <mark>Fechadas</mark></td>
+                            <td>Ascendente (Ponto Morto Inferior &rarr; Superior)</td>
+                            <td>O pistão sobe comprimindo a mistura ar-combustível no topo do cilindro, aumentando drasticamente a pressão e a temperatura.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Combustão / Expansão</strong></td>
+                            <td>Ambas <mark>Fechadas</mark></td>
+                            <td>Descendente (Ponto Morto Superior &rarr; Inferior)</td>
+                            <td>A vela de ignição gera uma faísca (ou ocorre autoignição no Diesel), queimando a mistura. A expansão violenta dos gases empurra o pistão para baixo, gerando a <mark>potência mecânica</mark>.</td>
+                        </tr>
+                        <tr bgcolor="#f9f9f9">
+                            <td><strong>4. Exaustão / Escape</strong></td>
+                            <td>Admissão Fechada<br>Escape <mark>Aberta</mark></td>
+                            <td>Ascendente (Ponto Morto Inferior &rarr; Superior)</td>
+                            <td>O pistão sobe novamente empurrando os gases queimados de <mark>CO<sub>2</sub></mark> e <mark>H<sub>2</sub>O</mark> para fora da câmara em direção ao coletor de escape.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+
+                <p>
+                    Historicamente, acreditava-se que <del>motores de alta cilindrada não precisavam de injeção eletrônica para serem eficientes</del>. 
+                    Hoje, <ins>sistemas de injeção direta de alta pressão controlados por módulos de injeção (<abbr title="Engine Control Unit">ECU</abbr>)</ins> são indispensáveis. 
+                    Em testes de bancada e dinamômetro, a calibração pode ser iniciada pressionando a sequência de teclas do scanner mecânico <kbd>Ctrl</kbd> + <kbd>F5</kbd>.
+                </p>
+
+                <figure>
+                    <img src="../img/motor 4 tempos.webp" alt="Diagrama explicativo dos 4 tempos do Ciclo Otto" width="550">
+                    <figcaption><i>Diagrama do Ciclo Otto</i> — Os quatro estágios de transformação da energia térmica em trabalho mecânico.</figcaption>
+                </figure>
+            </section>
+            <br>
+
+            <!-- SEÇÃO 2: AS GRANDES ARQUITETURAS -->
+            <section>
+                <h3>2. Principais Arquiteturas e Disposições de Cilindros</h3>
+                <p>
+                    A disposição dos cilindros determina o centro de gravidade do veículo, a distribuição de peso e as características de vibração harmônica do virabrequim.
+                </p>
+
+                <!-- ARQUITETURA BOXER -->
+                <h4>2.1. Motor Boxer (Cilindros Opostos a 180°)</h4>
+                <p>
+                    Famoso por equipar os modelos da <a href="porsche.html">Porsche</a>, os pistões movem-se na horizontal contrapondo-se em pares simétricos (como os punhos de dois pugilistas, origem do nome <i>Boxer</i>). 
+                    Essa arquitetura oferece um <mark>centro de gravidade extremamente baixo</mark>, cancelando vibrações primárias de segunda ordem.
+                </p>
+
+                <details>
+                    <summary><strong>Especificação do Código do Bloco Porsche</strong></summary>
+                    <p>
+                        A identificação técnica do motor Boxer de 6 cilindros da geração clássica é classificada em normas industriais sob a sintaxe de código <code>MA1.01-B6</code>.
+                    </p>
+                </details>
+                <br>
+
+                <!-- ARQUITETURA V8 E V12 -->
+                <h4>2.2. Motores em V: V8 e V12</h4>
+                <p>
+                    Utilizados amplamente pela <a href="ferrari.html">Ferrari</a>, <a href="lamborghini.html">Lamborghini</a> e <a href="ford.html">Ford</a>, os motores dispostos em bancadas angulares (geralmente a <mark>60°</mark> ou <mark>90°</mark>) equilibram compactação e entrega massiva de torque.
+                </p>
+
+                <ul>
+                    <li><strong>V8 Flat-Plane (Virabrequim Plano):</strong> Utilizado por supercarros europeus para permitir rotações acima de <code>8.500 RPM</code> com rápida subida de giro.</li>
+                    <li><strong>V8 Cross-Plane (Virabrequim Cruzado):</strong> Assinatura clássica dos <i>Muscle Cars</i> da <a href="ford.html">Ford</a>, entregando um ronco encorpado e alto torque em baixas rotações.</li>
+                    <li><strong>V12 Aspirado:</strong> A arquitetura suprema de suavidade mecânica, onde a cada <code>60°</code> de rotação do virabrequim ocorre um tempo de combustão.</li>
+                </ul>
+
+                <figure>
+                    <img src="../img/v12 lambo.jpg" alt="Motor lamborghini V12 aspirado exposto em suporte técnico" width="470">
+                    <figcaption><i>Motor V12 Aspirado lamborghini</i> — Uma obra de arte mecânica focada em fluxo de ar e alta rotação.</figcaption>
+                </figure>
+            </section>
+            <br>
+
+            <!-- SEÇÃO 3: SOBREALIMENTAÇÃO E O FUTURO -->
+            <section>
+                <h3>3. Aspiração Natural vs. Sobrealimentação (<abbr title="Turbocompressor ou Compressor Mecânico">Indução Forçada</abbr>)</h3>
+                <p>
+                    A densidade do ar admitido limita a quantidade de combustível que pode ser queimado de forma estequiométrica (proporção ideal de <code>14,7:1</code> para gasolina).
+                </p>
+
+                <p>
+                    Motores <strong>naturalmente aspirados</strong> dependem exclusivamente da pressão atmosférica (<code>1.0 atm</code> ao nível do mar) para preencher a câmara. 
+                    Já os motores sobrealimentados por <strong>turbocompressor</strong> ou <strong>compressor mecânico</strong> (<abbr title="Supercharger">SVT</abbr>) pressurizam a admissão com valores que superam <code>2,5 bar</code> absolutos.
+                </p>
+
+                <br>
+
+                <p>
+                    <small>*Nota técnica: A potência final declarada em cavalos-vapor (<abbr title="Cavalo-Vapor">cv</abbr>) ou quilowatts (<abbr title="Kilowatt">kW</abbr>) pode variar conforme as normas de medição <abbr title="Society of Automotive Engineers">SAE J1349</abbr> ou <abbr title="Deutsches Institut für Normung">DIN 70020</abbr>.</small>
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Projeto de Desenvolvimento Web em HTML Puro — <a href="feedback.html">Clique aqui para enviar um feedback</a></p>
+    </footer>
+
+</body>
+</html>
